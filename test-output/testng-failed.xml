@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteName]">
+  <test name="TestA(failed)">
+    <classes>
+      <class name="com.qtpselenium.core.ddf.testcases.DummyTestA">
+        <methods>
+          <include name="testA1"/>
+          <include name="init"/>
+          <include name="testA2"/>
+          <include name="testA3"/>
+        </methods>
+      </class> <!-- com.qtpselenium.core.ddf.testcases.DummyTestA -->
+      <class name="com.qtpselenium.core.ddf.testcases.DummyTestC">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.core.ddf.testcases.DummyTestC -->
+      <class name="com.qtpselenium.core.ddf.testcases.DummyTestB">
+        <methods>
+          <include name="quitTest"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qtpselenium.core.ddf.testcases.DummyTestB -->
+    </classes>
+  </test> <!-- TestA(failed) -->
+  <test name="TestB(failed)">
+    <classes>
+      <class name="com.qtpselenium.core.ddf.testcases.DummyTestA">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qtpselenium.core.ddf.testcases.DummyTestA -->
+      <class name="com.qtpselenium.core.ddf.testcases.DummyTestC">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.core.ddf.testcases.DummyTestC -->
+      <class name="com.qtpselenium.core.ddf.testcases.DummyTestB">
+        <methods>
+          <include name="quitTest"/>
+          <include name="init"/>
+          <include name="testB" invocation-numbers="2 3"/>
+        </methods>
+      </class> <!-- com.qtpselenium.core.ddf.testcases.DummyTestB -->
+    </classes>
+  </test> <!-- TestB(failed) -->
+  <test name="TestC(failed)">
+    <classes>
+      <class name="com.qtpselenium.core.ddf.testcases.DummyTestA">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qtpselenium.core.ddf.testcases.DummyTestA -->
+      <class name="com.qtpselenium.core.ddf.testcases.DummyTestC">
+        <methods>
+          <include name="testC" invocation-numbers="1 3 5 7"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.core.ddf.testcases.DummyTestC -->
+      <class name="com.qtpselenium.core.ddf.testcases.DummyTestB">
+        <methods>
+          <include name="quitTest"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qtpselenium.core.ddf.testcases.DummyTestB -->
+    </classes>
+  </test> <!-- TestC(failed) -->
+</suite> <!-- Failed suite [SuiteName] -->
